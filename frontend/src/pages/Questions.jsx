@@ -8,6 +8,7 @@ export default function Questions() {
   const { id } = useParams();
 
   const [questions, setQuestions] = useState([]);
+  const [solving, setSolving] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
@@ -41,6 +42,7 @@ export default function Questions() {
   }
 
   async function handleSolved(questionId) {
+    if (solving === questionId) return;
     try {
       await addSolvedQuestion(questionId);
       alert("Question marked as solved!");
@@ -148,5 +150,6 @@ export default function Questions() {
     </div>
   );
 }
+
 
 
