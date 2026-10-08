@@ -8,6 +8,7 @@ export default function Questions() {
   const { id } = useParams();
 
   const [questions, setQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [difficulty, setDifficulty] = useState("All");
 
@@ -142,3 +143,4 @@ export default function Questions() {
     </div>
   );
 }
+
