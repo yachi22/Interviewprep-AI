@@ -154,3 +154,7 @@ The application follows a client-server architecture.
                          │       MySQL         │
                          │      Database       │
                          └─────────────────────┘
+
+## Development Notes
+- Improved interview question interactions and user feedback.
+
