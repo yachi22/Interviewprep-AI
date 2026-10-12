@@ -9,9 +9,7 @@ export default function Questions() {
 
   const [questions, setQuestions] = useState([]);
   const [solving, setSolving] = useState(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
   const [difficulty, setDifficulty] = useState("All");
 
@@ -150,6 +148,7 @@ export default function Questions() {
     </div>
   );
 }
+
 
 
 
